@@ -30,6 +30,23 @@
     "@wallet-standard/features": "^1.0.3",
     "viem": "^2.7.12"
   },
+  "peerDependenciesMeta": {
+    "viem": {
+      "optional": true
+    },
+    "@solana/web3.js": {
+      "optional": true
+    },
+    "@solana/wallet-standard-features": {
+      "optional": true
+    },
+    "@wallet-standard/features": {
+      "optional": true
+    },
+    "@wallet-standard/base": {
+      "optional": true
+    }
+  },
   "typesVersions": {
     "*": {
       "eip6963": [
