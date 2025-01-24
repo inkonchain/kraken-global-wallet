@@ -50,7 +50,15 @@ After configuring your wallet package, test it locally using a Wallet SDK of you
    npm run build
    ```
 
-2. **Create a New Project**
+2. **Pack Your Wallet Package**
+
+   ```bash
+   npm pack
+   ```
+
+   This will create a `.tgz` file in your directory.
+
+3. **Create a New Project**
    In a separate directory, initialize a new project:
 
    ```bash
@@ -59,13 +67,13 @@ After configuring your wallet package, test it locally using a Wallet SDK of you
 
    Select **ReactJS** or **NextJS** as your project type.
 
-3. **Install Your Wallet Package**
+4. **Install Your Wallet Package**
 
    ```bash
-   npm install <path-to-your-wallet-package>
+   npm install /path/to/your-wallet-package-1.0.0.tgz
    ```
 
-4. **Import Your Wallet**
+5. **Import Your Wallet**
 
    - For **EVM Wallet**:
 
@@ -78,7 +86,7 @@ After configuring your wallet package, test it locally using a Wallet SDK of you
      import "<wallet-package-name>/solana-standard";
      ```
 
-5. **Use Your Wallet**
+6. **Use Your Wallet**
    Your wallet is now ready to use within the project.
 
 ---
