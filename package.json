@@ -16,7 +16,7 @@
     "build:cjs": "tsc --project ./tsconfig.json --module commonjs --moduleResolution node --outDir ./dist/cjs --removeComments --verbatimModuleSyntax false"
   },
   "dependencies": {
-    "@dynamic-labs/global-wallet-client": "^4.2.3",
+    "@dynamic-labs/global-wallet-client": "^4.4.3",
     "@wallet-standard/wallet": "^1.1.0"
   },
   "devDependencies": {
@@ -28,6 +28,7 @@
     "@solana/web3.js": "^1.92.1",
     "@wallet-standard/base": "^1.0.1",
     "@wallet-standard/features": "^1.0.3",
+    "@wallet-standard/wallet": "^1.1.0",
     "viem": "^2.7.12"
   },
   "peerDependenciesMeta": {
@@ -44,6 +45,9 @@
       "optional": true
     },
     "@wallet-standard/base": {
+      "optional": true
+    },
+    "@wallet-standard/wallet": {
       "optional": true
     }
   },
