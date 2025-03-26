@@ -1,4 +1,16 @@
-export const config = {
+import type { DataURIImage } from "@dynamic-labs/global-wallet-client";
+
+type Config = {
+  walletName: string;
+  walletIcon: DataURIImage;
+  walletUrl: string;
+  environmentId: string;
+  eip6963: {
+    rdns: string;
+  };
+};
+
+export const config: Config = {
   // Wallet name will be seen as the Wallet name
   walletName: "<wallet-name>",
   // Wallet icon will be seen as the Wallet icon
