@@ -11,6 +11,7 @@ export const EIP6963Emitter = () => {
       icon: config.walletIcon as any,
       name: config.walletName,
       rdns: config.eip6963.rdns,
+      uuid: config.environmentId,
     },
     provider: createEIP1193Provider(Wallet),
   });
