@@ -16,7 +16,7 @@
     "build:cjs": "tsc --project ./tsconfig.json --module commonjs --moduleResolution node --outDir ./dist/cjs --removeComments --verbatimModuleSyntax false"
   },
   "dependencies": {
-    "@dynamic-labs/global-wallet-client": "^4.9.9",
+    "@dynamic-labs/global-wallet-client": "^4.15.0",
     "@wallet-standard/wallet": "^1.1.0"
   },
   "devDependencies": {
@@ -53,11 +53,11 @@
   },
   "typesVersions": {
     "*": {
-      "eip6963": [
-        "./dist/types/eip6963.d.ts"
+      "ethereum": [
+        "./dist/types/ethereum.d.ts"
       ],
-      "solana-standard": [
-        "./dist/types/solana-standard.d.ts"
+      "solana": [
+        "./dist/types/solana.d.ts"
       ]
     }
   },
@@ -67,15 +67,15 @@
       "import": "./dist/esm/index.js",
       "default": "./dist/cjs/index.js"
     },
-    "./eip6963": {
-      "types": "./dist/types/eip6963.d.ts",
-      "import": "./dist/esm/eip6963.js",
-      "default": "./dist/cjs/eip6963.js"
+    "./ethereum": {
+      "types": "./dist/types/ethereum.d.ts",
+      "import": "./dist/esm/ethereum.js",
+      "default": "./dist/cjs/ethereum.js"
     },
-    "./solana-standard": {
-      "types": "./dist/types/solana-standard.d.ts",
-      "import": "./dist/esm/solana-standard.js",
-      "default": "./dist/cjs/solana-standard.js"
+    "./solana": {
+      "types": "./dist/types/solana.d.ts",
+      "import": "./dist/esm/solana.js",
+      "default": "./dist/cjs/solana.js"
     }
   }
 }

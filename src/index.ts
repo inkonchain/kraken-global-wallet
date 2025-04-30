@@ -1,2 +1,5 @@
-export { registerSolanaStandard } from "./lib/registerSolanaStandard";
-export { EIP6963Emitter } from "./lib/EIP6963Emitter";
+import Wallet from "./lib/wallet";
+
+export * from "@dynamic-labs/global-wallet-client/features";
+
+export default Wallet;
