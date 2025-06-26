@@ -1,7 +1,7 @@
 {
-  "name": "<wallet-package-name>",
-  "author": "<wallet-author>",
-  "description": "<wallet-description>",
+  "name": "kraken-global-wallet",
+  "author": "@inkonchain",
+  "description": "Kraken Global Wallet",
   "version": "0.0.0",
   "type": "module",
   "main": "dist/cjs/index.js",
@@ -16,7 +16,7 @@
     "build:cjs": "tsc --project ./tsconfig.json --module commonjs --moduleResolution node --outDir ./dist/cjs --removeComments --verbatimModuleSyntax false"
   },
   "dependencies": {
-    "@dynamic-labs/global-wallet-client": "^4.15.0",
+    "@dynamic-labs/global-wallet-client": "^4.20.9",
     "@wallet-standard/wallet": "^1.1.0"
   },
   "devDependencies": {
